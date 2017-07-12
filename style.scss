@@ -1,6 +1,7 @@
 $Font: "Proxima Nova";
 $Orange: #ff7800;
 $White: #ffffff;
+$canvasColor: #eaeaea;
 
 /*sidebar*/
 $barWidth: 200px;
@@ -16,6 +17,12 @@ $sidebtnColor: rgba(0, 0, 0, 0.0);
 $activeColor: #ff7800;
 $activeBorder: #ff7800 8px solid;
 
+$iconSize: 24px;
+$iconPadding:20px;
+
+
+
+body {background-color: $canvasColor;}
 a,p {font-family: $Font; font-size: $sideFontsize;}
 ul {padding:0;}
 
@@ -29,3 +36,6 @@ ul {padding:0;}
 #btnText {color: $White; text-decoration: none;}
 
 .buttonWrapper{padding-top: 80px;}
+
+#activeIcon {color: $Orange; font-size: $iconSize; padding-right: $iconPadding;}
+#icon {color: $White; font-size: $iconSize; padding-right: $iconPadding;}

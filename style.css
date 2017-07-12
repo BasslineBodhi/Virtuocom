@@ -1,6 +1,9 @@
 /*sidebar*/
 /*non-active buttons*/
 /*active buttons*/
+body {
+  background-color: #eaeaea; }
+
 a, p {
   font-family: "Proxima Nova";
   font-size: 1.5em; }
@@ -34,5 +37,15 @@ ul {
 
 .buttonWrapper {
   padding-top: 80px; }
+
+#activeIcon {
+  color: #ff7800;
+  font-size: 24px;
+  padding-right: 20px; }
+
+#icon {
+  color: #ffffff;
+  font-size: 24px;
+  padding-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */
