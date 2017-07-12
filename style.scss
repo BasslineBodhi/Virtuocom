@@ -1,0 +1,31 @@
+$Font: "Proxima Nova";
+$Orange: #ff7800;
+$White: #ffffff;
+
+/*sidebar*/
+$barWidth: 200px;
+$barColor: radial-gradient(circle at 50% 5%, #000000, #221f1e);
+
+/*non-active buttons*/
+$sideFontsize: 1.5em;
+$btnWidth: 160px;
+$sidebtnPadding: 50 0 50 25;
+$sidebtnColor: rgba(0, 0, 0, 0.0);
+
+/*active buttons*/
+$activeColor: #ff7800;
+$activeBorder: #ff7800 8px solid;
+
+a,p {font-family: $Font; font-size: $sideFontsize;}
+ul {padding:0;}
+
+#sidebar {width: $barWidth; height: 100%; background-image: $barColor;}
+
+#sideBtn {width: $btnWidth; padding: $sidebtnPadding; background-color: $sidebtnColor}
+
+#activeBtn {border-left: $activeBorder; color: $activeColor; width: $btnWidth; padding: $sidebtnPadding;}
+#activeText {color: $activeColor; text-decoration: none;}
+
+#btnText {color: $White; text-decoration: none;}
+
+.buttonWrapper{padding-top: 80px;}
