@@ -1,15 +1,26 @@
 /*sidebar*/
 /*non-active buttons*/
 /*active buttons*/
+/* Video Modules */
+/* Dashboard */
 body {
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  font-family: "Proxima Nova"; }
 
-a, p {
+a, p, h1 {
   font-family: "Proxima Nova";
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #787878; }
 
 ul {
   padding: 0; }
+
+#content, #sidebar {
+  display: inline-block; }
+
+#content {
+  position: absolute;
+  padding: 64px 0px 0px 62px; }
 
 #sidebar {
   width: 200px;
@@ -41,11 +52,142 @@ ul {
 #activeIcon {
   color: #ff7800;
   font-size: 24px;
-  padding-right: 20px; }
+  padding-right: 10px; }
 
 #icon {
   color: #ffffff;
   font-size: 24px;
-  padding-right: 20px; }
+  padding-right: 10px; }
+
+#addCourse {
+  font-size: 20px;
+  color: #020202;
+  margin-top: 36px; }
+
+#addIcon {
+  margin: 0px 0px 0px 10px; }
+
+/* Video Modules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, span, #title, #subtitle {
+  font-family: "Proxima Nova";
+  font-weight: 300; }
+
+.status {
+  font-family: "Proxima Nova";
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+  padding: 3px 3px 3px 3px; }
+
+.body {
+  background-color: #ecf0f1; }
+
+header {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 136px;
+  padding-bottom: 2em;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.container {
+  width: 292px;
+  height: 272px;
+  margin: 3em auto 1em auto;
+  border-radius: 5px;
+  padding-bottom: 1.5em;
+  background-color: #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  -moz-box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px; }
+
+.bg {
+  width: 305px; }
+
+#title {
+  margin: 20px 20px 0px;
+  font-size: 23px;
+  color: #787878;
+  position: relative; }
+
+#subtitle {
+  margin: 0px 0px 0px 20px;
+  font-size: 20px;
+  color: #787878;
+  position: absolute; }
+
+.active {
+  width: 86px;
+  height: 30px;
+  margin: -15px 21px 0px 186px;
+  position: fixed;
+  border-radius: 6px;
+  background-color: #00bfcc; }
+
+.avgTaken {
+  margin: 65px 0px 0px 20px; }
+
+#avgColor {
+  color: #00ff16; }
+
+#avgScore {
+  margin: 0px 0px 0px 90px; }
+
+#settings {
+  font-size: 32px;
+  color: #787878;
+  padding: 350px 0px 0px 165px; }
+
+/* Seetings Page */
+#settingHeader {
+  font-size: 20px;
+  color: #787878;
+  margin-top: 36px; }
+
+#line {
+  width: 923px;
+  border: solid 1px #dddddd;
+  margin-top: 20px; }
+
+#inputModify1 {
+  height: 30px;
+  width: 230px;
+  font-size: 20px;
+  margin-left: 45px; }
+
+#inputModify2 {
+  height: 30px;
+  width: 230px;
+  font-size: 20px;
+  margin-left: 35px; }
+
+#inputModify3 {
+  height: 30px;
+  width: 230px;
+  font-size: 20px;
+  margin-left: 7px; }
+
+.pswdBtn {
+  height: 30px;
+  width: 180px;
+  background-color: #787878;
+  padding: 5px 0px 0px 25px;
+  color: #ffffff;
+  margin: 30px 0px 0px 225px; }
 
 /*# sourceMappingURL=style.css.map */
