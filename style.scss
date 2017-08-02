@@ -8,6 +8,7 @@ $textColor2: #020202;
 $textSize1: 23px;
 $textSize2: 20px;
 
+
 $inputHeight: 30px;
 $inputWidth: 280px;
 
@@ -30,6 +31,7 @@ $activeColor: #ff7800;
 $activeBorder: #ff7800 8px solid;
 
 $iconSize: 24px;
+$iconSize2: 18px;
 $iconPadding:10px;
 
 
@@ -42,6 +44,7 @@ $boxWidth: 292px;
 $radius: 8px;
 $boxShadow: #bdc3c7 0 5px 5px; 
 $statucColor: #00bfcc;
+
 
 
 
@@ -67,6 +70,7 @@ ul {padding:0;}
 
 #activeIcon {color: $Orange; font-size: $iconSize; padding-right: $iconPadding;}
 #icon {color: $White; font-size: $iconSize; padding-right: $iconPadding;}
+
 #addCourse {font-size: $textSize2; color: $textColor2; margin-top: 36px;}
 #addIcon {margin: 0px 0px 0px 10px;}
 
@@ -74,9 +78,10 @@ ul {padding:0;}
 
 * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
 
-h1,h2,span, #title, #subtitle {font-family: $font; font-weight: 300;}
+h1,h2, #title, #subtitle {font-family: $font; font-weight: 300;}
 
 .status {font-family: $font; color: $White; font-weight: 200; font-size: 18px; text-align: $center; padding: $statusPadding}
+#update {font-size: 18px; color: $textColor2; padding: 0px 0px 2px 0px;}
 
 .body {background-color: $grey;}
 header {display: block; overflow: hidden; position: relative; height: $boxHeight; padding-bottom: 2em; 
@@ -87,7 +92,7 @@ border-top-left-radius: $radius;
 -webkit-border-top-right-radius: $radius;
 border-top-right-radius: $radius;}
 
-.container {width: $boxWidth; height: $boxHeight*2; margin: 3em auto 1em auto; border-radius: 5px; padding-bottom: 1.5em; background-color: $White;
+.container {width: $boxWidth; height: $boxHeight*2; margin: 3em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;
 -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
@@ -102,15 +107,22 @@ border-top-right-radius: $radius;}
 
 #subtitle {margin: 0px 0px 0px 20px; font-size: $textSize2; color: $textColor; position: absolute;}
 
-.active {width: 86px; height: 30px; margin: -15px 21px 0px 186px; position: fixed; border-radius: 6px; background-color: $statucColor;}
+.active {width: 86px; height: 30px; margin: -15px 21px 0px 186px; border-radius: 6px; background-color: $statucColor;    position: absolute;}
+.draft {width: 86px; height: 30px; margin: -15px 21px 0px 186px; border-radius: 6px; background-color: $textColor; position: absolute;}
 
-.avgTaken {margin: 65px 0px 0px 20px;}
+.avgTaken {margin: 60px 0px 0px 20px;}
 
-#avgColor {color:#00ff16;}
+#avgColor {color:#00ff16; font-size: $iconSize2;}
+#avgColor2 {color: $textColor2; font-size: $iconSize2;}
 
 #avgScore {margin: 0px 0px 0px 90px;}
 
-#settings {font-size: 32px;; color: $textColor;padding: 350px 0px 0px 165px;}
+#settings {font-size: 32px; color: $textColor;padding: 60px 0px 0px 20px;}
+
+
+ 
+
+
 
 /* Settings Page */
 
@@ -130,7 +142,7 @@ border-top-right-radius: $radius;}
 
 /* Account Page */
 
-.activeToggle {color: $Orange; border-bottom: solid + $Orange; display: $inblock}
+.activeToggle {color: $Orange; border-bottom: solid + $Orange; display: $inblock;}
 .passiveToggle {color: $textColor; display: $inblock}
 #spacer {display:inline-block; width: 45px;}
 
@@ -143,3 +155,62 @@ border-top-right-radius: $radius;}
 #nameNext {display: block;}
 
 .saveBtn {height: $inputHeight; width: 90px; background-color: $statucColor; padding: 5px 0px 0px 26px; color: $White; margin: 30px 0px 0px 550px;}
+
+
+
+
+
+.container2 {width: 495px; height: $boxHeight*2; margin: 3em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;
+-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+-webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow; }
+
+.contentContainer {width: 495px; height: 420px; margin: 0em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;text-align: initial;
+-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+-webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow; }
+
+#headerModal {display: block; overflow: hidden; position: relative; height: 217px; padding-bottom: 2em; 
+-moz-border-radius-topleft: $radius;
+-webkit-border-top-left-radius: $radius;
+border-top-left-radius: $radius;
+-moz-border-radius-topright: $radius;
+-webkit-border-top-right-radius: $radius;
+border-top-right-radius: $radius;}
+
+.bgModal {width: 305px*1.75;}
+#floatRight {float: right;}
+
+.activeModal {width: 86px; height: 30px; margin: -15px 21px 0px 390px; border-radius: 6px; background-color: $statucColor;}
+.statContainer {display: inline-block;width: 198px; margin: 0px 0px 0px 20px;}
+
+.responsesContainer{display: inline-block;width: 198px;float: right; margin: 0px 20px 0px 0px;}
+
+
+//.content {margin-top: 45px;}
+
+#statTitle {margin-bottom: 15px}
+
+.statCell {margin: 5px 0px 5px 0px; display: block;}
+
+
+.line {border-bottom: 1px solid #dddddd; height: 1px; width: 137px;flex: 1;margin-left: 64px;}
+
+.updateContainer {margin: 40px 0px 0px 20px;}
+
+.updateTitle {margin-bottom: 15px;}
+
+
+.contentModal {color: $textColor; margin-top: 45px;}
+
+.overlay {position: fixed;top: 0;left: 0;height: 100%;width: 100%;background-color: rgba(0,0,0,0.5);z-index: 10; display: none;}
+
+.modal {text-align: center;}

@@ -1,0 +1,89 @@
+$font: "Proxima Nova";
+$Orange: #ff7800;
+$White: #ffffff;
+$canvasColor: #eaeaea;
+$inblock :inline-block;
+$textColor: #787878;
+$textColor2: #020202;
+$textSize1: 23px;
+$textSize2: 20px;
+
+
+$inputHeight: 30px;
+$inputWidth: 280px;
+
+
+/*sidebar*/
+$barWidth: 200px;
+$barColor: radial-gradient(circle at 50% 5%, #000000, #221f1e);
+
+//padding for "lessons" & "add course" btn
+$h1padding: 64px 0px 0px 62px;
+
+/*non-active buttons*/
+$sideFontsize: 1.5em;
+$btnWidth: 160px;
+$sidebtnPadding: 50 0 50 25;
+$sidebtnColor: rgba(0, 0, 0, 0.0);
+
+/*active buttons*/
+$activeColor: #ff7800;
+$activeBorder: #ff7800 8px solid;
+
+$iconSize: 24px;
+$iconSize2: 18px;
+$iconPadding:10px;
+
+
+/* Video Modules */
+$statusPadding: 3px 3px 3px 3px;
+$center: center;
+$grey: #ecf0f1;
+$boxHeight: 136px;
+$boxWidth: 292px;
+$radius: 8px;
+$boxShadow: #bdc3c7 0 5px 5px; 
+$statucColor: #00bfcc;
+/* Video Modules */
+
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
+
+h1,h2,span, #title, #subtitle {font-family: $font; font-weight: 300;}
+
+.status {font-family: $font; color: $White; font-weight: 200; font-size: 18px; text-align: $center; padding: $statusPadding}
+
+
+.body {background-color: $grey;}
+header {display: block; overflow: hidden; position: relative; height: $boxHeight; padding-bottom: 2em; 
+-moz-border-radius-topleft: $radius;
+-webkit-border-top-left-radius: $radius;
+border-top-left-radius: $radius;
+-moz-border-radius-topright: $radius;
+-webkit-border-top-right-radius: $radius;
+border-top-right-radius: $radius;}
+
+.container2 {width: 495px; height: 645px; margin: 3em 3em 1em 0px; border-radius: 5px; padding-bottom: 1.5em; background-color: $White; display: $inblock;
+-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+-webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow; }
+
+.bg {width: 305px;}
+
+#title {margin: 20px 20px 0px; font-size: $textSize1; color: $textColor; position: relative;}
+
+#subtitle {margin: 0px 0px 0px 20px; font-size: $textSize2; color: $textColor; position: absolute;}
+
+.active {width: 86px; height: 30px; margin: -15px 21px 0px 186px; border-radius: 6px; background-color: $statucColor;    position: absolute;}
+.draft {width: 86px; height: 30px; margin: -15px 21px 0px 186px; border-radius: 6px; background-color: $textColor; position: absolute;}
+
+.avgTaken {margin: 65px 0px 0px 20px;}
+
+#avgColor {color:#00ff16;}
+
+#avgScore {margin: 0px 0px 0px 90px;}
+
+#settings {font-size: 32px;; color: $textColor;padding: 350px 0px 0px 165px;}

@@ -73,7 +73,7 @@ ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1, h2, span, #title, #subtitle {
+h1, h2, #title, #subtitle {
   font-family: "Proxima Nova";
   font-weight: 300; }
 
@@ -84,6 +84,11 @@ h1, h2, span, #title, #subtitle {
   font-size: 18px;
   text-align: center;
   padding: 3px 3px 3px 3px; }
+
+#update {
+  font-size: 18px;
+  color: #020202;
+  padding: 0px 0px 2px 0px; }
 
 .body {
   background-color: #ecf0f1; }
@@ -104,10 +109,11 @@ header {
 .container {
   width: 292px;
   height: 272px;
-  margin: 3em auto 1em auto;
+  margin: 3em 3em 1em 0px;
   border-radius: 5px;
   padding-bottom: 1.5em;
   background-color: #ffffff;
+  display: inline-block;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -135,15 +141,28 @@ header {
   width: 86px;
   height: 30px;
   margin: -15px 21px 0px 186px;
-  position: fixed;
   border-radius: 6px;
-  background-color: #00bfcc; }
+  background-color: #00bfcc;
+  position: absolute; }
+
+.draft {
+  width: 86px;
+  height: 30px;
+  margin: -15px 21px 0px 186px;
+  border-radius: 6px;
+  background-color: #787878;
+  position: absolute; }
 
 .avgTaken {
-  margin: 65px 0px 0px 20px; }
+  margin: 60px 0px 0px 20px; }
 
 #avgColor {
-  color: #00ff16; }
+  color: #00ff16;
+  font-size: 18px; }
+
+#avgColor2 {
+  color: #020202;
+  font-size: 18px; }
 
 #avgScore {
   margin: 0px 0px 0px 90px; }
@@ -151,7 +170,7 @@ header {
 #settings {
   font-size: 32px;
   color: #787878;
-  padding: 350px 0px 0px 165px; }
+  padding: 60px 0px 0px 20px; }
 
 /* Settings Page */
 #settingHeader {
@@ -249,5 +268,112 @@ header {
   padding: 5px 0px 0px 26px;
   color: #ffffff;
   margin: 30px 0px 0px 550px; }
+
+.container2 {
+  width: 495px;
+  height: 272px;
+  margin: 3em 3em 1em 0px;
+  border-radius: 5px;
+  padding-bottom: 1.5em;
+  background-color: #ffffff;
+  display: inline-block;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  -moz-box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px; }
+
+.contentContainer {
+  width: 495px;
+  height: 420px;
+  margin: 0em 3em 1em 0px;
+  border-radius: 5px;
+  padding-bottom: 1.5em;
+  background-color: #ffffff;
+  display: inline-block;
+  text-align: initial;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  -moz-box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px; }
+
+#headerModal {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 217px;
+  padding-bottom: 2em;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.bgModal {
+  width: 533.75px; }
+
+#floatRight {
+  float: right; }
+
+.activeModal {
+  width: 86px;
+  height: 30px;
+  margin: -15px 21px 0px 390px;
+  border-radius: 6px;
+  background-color: #00bfcc; }
+
+.statContainer {
+  display: inline-block;
+  width: 198px;
+  margin: 0px 0px 0px 20px; }
+
+.responsesContainer {
+  display: inline-block;
+  width: 198px;
+  float: right;
+  margin: 0px 20px 0px 0px; }
+
+#statTitle {
+  margin-bottom: 15px; }
+
+.statCell {
+  margin: 5px 0px 5px 0px;
+  display: block; }
+
+.line {
+  border-bottom: 1px solid #dddddd;
+  height: 1px;
+  width: 137px;
+  flex: 1;
+  margin-left: 64px; }
+
+.updateContainer {
+  margin: 40px 0px 0px 20px; }
+
+.updateTitle {
+  margin-bottom: 15px; }
+
+.contentModal {
+  color: #787878;
+  margin-top: 45px; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none; }
+
+.modal {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
